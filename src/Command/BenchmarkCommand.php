@@ -36,12 +36,12 @@ class BenchmarkCommand extends Command
 
     protected function testGroupCount($count, $output)
     {
-        $this->test($count, ['GroupedFixedArraySort', 'GroupedArraySort', 'GroupedStringSort'], $output);
+        $this->test($count, array('GroupedFixedArraySort', 'GroupedArraySort', 'GroupedStringSort'), $output);
     }
 
     protected function testSimpleCount($count, $output)
     {
-        $this->test($count, ['FixedArraySort', 'ArraySort', 'StringSort'], $output);
+        $this->test($count, array('FixedArraySort', 'ArraySort', 'StringSort'), $output);
     }
 
     protected function test($count, $classes, OutputInterface $output)

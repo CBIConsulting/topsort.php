@@ -1,2 +1,5 @@
 ./vendor
 ./report
+vendor
+report
+clover.xml
